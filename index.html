@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 2;
+      background: url(./Sky.jpg) no-repeat left top/cover;
+    }
+
+    .container {
+      height: 60%;
+      width: 90%;
+      background: hsla(0, 0%, 100%, 0.6);
+      border-radius: 10px;
+    }
+
+    .p {
+      text-align: center;
+      color: gray;
+      font-size: 24px;
+    }
+
+    .input-group-text {
+      background: white;
+      color: gray;
+    }
+
+    .form-control {
+      padding: 0;
+      border-left-style: none;
+    }
+
+    ::placeholder {
+      color: rgb(177, 177, 177) !important;
+    }
+
+    .icon {
+      position: absolute;
+      left: 50%;
+      top: 13%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgb(61, 107, 255);
+      opacity: .8;
+      text-align: center;
+      line-height: 80px;
+      color: white;
+      font-size: 38px;
+    }
+
+    .custom-control-label::before,
+    .custom-control-label::after {
+      top: 0.3rem;
+      width: 0.9rem;
+      height: 0.9rem;
+    }
+
+    @media (min-width: 576px) {
+      .container {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .container {
+        width: 25%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container p-0 d-flex justify-content-center align-items-center">
+    <div class="icon"><i class="far fa-user"></i></div>
+    <div class="row">
+      <div class="col d-flex flex-column">
+        <span class="p mb-2">Sign In</span>
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="Username"><i class="fas fa-user"></i></label>
+            </div>
+            <input type="email" class="form-control" id="Username" placeholder="Username">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="Password"><i class="fas fa-lock"></i></label>
+            </div>
+            <input type="password" class="form-control" id="Password" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block mb-3">Login</button>
+          <div class="d-flex justify-content-between">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="exampleCheck1">
+              <label class="custom-control-label text-white" for="exampleCheck1" style="font-size: 12px;">Remember
+                me</label>
+            </div>
+            <a href="#" class="text-white" style="font-size: 12px;">Forgot Password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
